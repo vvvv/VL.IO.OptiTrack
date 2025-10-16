@@ -22,10 +22,10 @@
             </p:NodeReference>
             <Pin Id="EMGIT9kExysO76L2QQnGLs" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="RcO4DUyxp49PCRLjCpUNrH" Name="Output" Kind="OutputPin" />
-            <Pin Id="GJ2RHSWVKN7MKaEGrZrYtu" Name="AssetDescriptors" Kind="OutputPin" />
             <Pin Id="TgItJEIHB8sPzTmbQjt2VA" Name="Local Address" Kind="InputPin" IsHidden="true" />
             <Pin Id="Mzad3hXKHgyQAANuB6JD57" Name="Server Address" Kind="InputPin" />
             <Pin Id="UEOnAnNzSdpQN1mh2ABK75" Name="Connection Type" Kind="InputPin" />
+            <Pin Id="Q4Luqj25rYbOCqXO30lxVi" Name="Host Info" Kind="OutputPin" />
           </Node>
           <Node Bounds="188,805,225,19" Id="SXQBg69y6gaP5AepPydMvO">
             <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
@@ -241,6 +241,7 @@
             <Pin Id="KMzzLmKu5XhLnU5EDmGsy3" Name="Names" Kind="OutputPin" />
             <Pin Id="Uf2o2UWY6bzLPlaCE3KyBU" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="BK4UG3SleVcM41ASudGRsg" Name="Input" Kind="InputPin" />
+            <Pin Id="Mx0W0kNxXlxLdwU9vFrGcU" Name="Skeleton Coordinates" Kind="InputPin" />
           </Node>
           <Pad Id="R4Oazm9f6nPNjd8Nvr46r0" Comment="Names" Bounds="229,211,126,102" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
@@ -261,7 +262,7 @@
             <Pin Id="HGFmRphbzRENiRK7KBXTfJ" Name="Enabled" Kind="InputPin" />
             <Pin Id="J1WHVlju0CjO4Q1nHd0t94" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="H4ttUrBpVpkPyJUyrcqaHU" Bounds="405,172,255,139" ShowValueBox="true" isIOBox="true" Value="⚠In order to receive skeletons you need to configure Motive accordingly:&#xD;&#xA;&#xD;&#xA;Motive Settings &gt; Streaming&#xD;&#xA;- Skeleton Coordinates -&gt; Local&#xD;&#xA;- Skeleton as Rigid Bodies -&gt; false&#xD;&#xA;- Bone Naming Convention -&gt; FBX">
+          <Pad Id="H4ttUrBpVpkPyJUyrcqaHU" Bounds="405,172,266,155" ShowValueBox="true" isIOBox="true" Value="⚠In order to receive skeletons you need to configure Motive accordingly:&#xD;&#xA;&#xD;&#xA;Motive Settings &gt; Streaming&#xD;&#xA;- Skeleton Coordinates -&gt; match the respective input on the Skeletons node&#xD;&#xA;- Skeleton as Rigid Bodies -&gt; false&#xD;&#xA;- Bone Naming Convention -&gt; FBX">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -280,6 +281,12 @@
               <Choice Kind="TypeFlag" Name="ConnectionType" />
             </p:TypeAnnotation>
           </Pad>
+          <Pad Id="HpOGudtUoGcOcsajILDC8f" Comment="Skeleton Coordinates" Bounds="229,140,56,15" ShowValueBox="true" isIOBox="true" Value="Local">
+            <p:TypeAnnotation LastCategoryFullName="IO.OptiTrack" LastDependency="VL.IO.OptiTrack.vl">
+              <Choice Kind="TypeFlag" Name="SkeletonCoordinates" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="O7SEmbLVnvjPRu76CAw4Gv" Comment="Host Info" Bounds="704,130,226,133" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="FeFpIigU80gO8CaIt6q6Zg" Name="Create" />
         <Patch Id="LJli5sKrj0eNgcdnluS3jo" Name="Update" />
@@ -306,6 +313,8 @@
         <Link Id="L7ZLiNG3z3oPmZutPZVO8z" Ids="J1WHVlju0CjO4Q1nHd0t94,Dka7yS6xTRINd2MX6XLokz" />
         <Link Id="BolzCOKMy50Ox8LuYCgmSG" Ids="CyWFwPqoGZlPlqTew7lwh7,Mzad3hXKHgyQAANuB6JD57" />
         <Link Id="UELDtrfVfNBOdzNOSt2Or7" Ids="VxjV6yCSUGwMpOghH7XWLb,UEOnAnNzSdpQN1mh2ABK75" />
+        <Link Id="JaE4qShiGQLMGCnL9FHNlo" Ids="HpOGudtUoGcOcsajILDC8f,Mx0W0kNxXlxLdwU9vFrGcU" />
+        <Link Id="Q71N3dWJAvvOyaUdBSxQUZ" Ids="Q4Luqj25rYbOCqXO30lxVi,O7SEmbLVnvjPRu76CAw4Gv" />
       </Patch>
     </Node>
   </Patch>
