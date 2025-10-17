@@ -1,6 +1,3 @@
-# For more information see:
-# https://thegraybook.vvvv.org/reference/extending/publishing.html
-
 name: push_nuget
 
 # on push on main
@@ -30,8 +27,7 @@ jobs:
     - name: Publish VL Nuget
       uses: vvvv/PublishVLNuget@1.0.43
       with:
-        csproj: src\VL.NewLibrary.Template.csproj
-        nuspec: deployment\VL.NewLibrary.Template.nuspec
+        nuspec: deployment\VL.IO.OptiTrack.nuspec
 
         # Fill the Icon file
         icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png

@@ -1,19 +1,20 @@
-# VL.NewLibrary.Template
+# VL.IO.OptiTrack
 
-- [ ] A clear and concise description of what this package is and does, also what problem it solves.
-- [ ] In case this is a wrapper, links to original code and which version of it is used
-- [ ] In case this is for a device/protocol, links to the device/protocol-specs
-- [ ] Required dependencies/drivers to download and install in the getting started section below
-- [ ] If available, links to documentation (other than helppatches), tutorial videos, blog posts, ...
-- [ ] Note that you can also [include images](https://devblogs.microsoft.com/nuget/add-a-readme-to-your-nuget-package/#markdown-and-image-support)!
-- [ ] Mention any limitations
+Support for Marker, Rigid Body and Skeleton tracking by [OptiTrack](https://optitrack.com). 
 
 For use with vvvv, the visual live-programming environment for .NET: http://vvvv.org
+
+In [Motive](https://optitrack.com/support/downloads/motive.html) make sure to enable NatNet in the [Streaming Settings](https://docs.optitrack.com/motive-ui-panes/settings/settings-streaming) and configure the options matching with settings in vvvv. Most notably:
+
+- Skeleton Coordinates: Local
+- Skeleton as Rigid Bodies: Off
+- Bone Naming Convention: FBX
+- Up Axis: Y-Axis
 
 ## Getting started
 - Install as [described here](https://thegraybook.vvvv.org/reference/hde/managing-nugets.html) via commandline:
 
-    `nuget install VL.NewLibrary.Template -pre`
+    `nuget install VL.IO.OptiTrack -pre`
 
 - Usage examples and more information are included in the pack and can be found via the [Help Browser](https://thegraybook.vvvv.org/reference/hde/findinghelp.html)
 
@@ -23,8 +24,4 @@ For use with vvvv, the visual live-programming environment for .NET: http://vvvv
 - When making a pull-request, please make sure to read the general [guidelines on contributing to vvvv libraries](https://thegraybook.vvvv.org/reference/extending/contributing.html)
 
 ## Credits
-Links to libraries this is based on
-
-## Sponsoring
-Development of this library was partially sponsored by:  
-* 
+Based on [NatNetSDK 4.2](https://optitrack.com/software/natnet-sdk)
