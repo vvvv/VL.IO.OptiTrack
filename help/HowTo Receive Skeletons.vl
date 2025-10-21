@@ -276,12 +276,12 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="VxjV6yCSUGwMpOghH7XWLb" Comment="Connection Type" Bounds="230,71,71,15" ShowValueBox="true" isIOBox="true" Value="Multicast">
+          <Pad Id="VxjV6yCSUGwMpOghH7XWLb" Comment="Connection Type" Bounds="230,71,71,15" ShowValueBox="true" isIOBox="true" Value="Unicast">
             <p:TypeAnnotation LastCategoryFullName="NatNetML" LastDependency="VL.IO.OptiTrack.vl">
               <Choice Kind="TypeFlag" Name="ConnectionType" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="HpOGudtUoGcOcsajILDC8f" Comment="Skeleton Coordinates" Bounds="229,140,56,15" ShowValueBox="true" isIOBox="true" Value="Local">
+          <Pad Id="HpOGudtUoGcOcsajILDC8f" Comment="Skeleton Coordinates" Bounds="229,140,59,15" ShowValueBox="true" isIOBox="true" Value="Local">
             <p:TypeAnnotation LastCategoryFullName="IO.OptiTrack" LastDependency="VL.IO.OptiTrack.vl">
               <Choice Kind="TypeFlag" Name="SkeletonCoordinates" />
             </p:TypeAnnotation>
@@ -312,9 +312,9 @@
         <Link Id="Hf6XZ8neghNNtUJwI5djxJ" Ids="J4qaNpciclRPeFDsOhXhO1,MSm14AMxKOEOVLUO4zT0bn" />
         <Link Id="L7ZLiNG3z3oPmZutPZVO8z" Ids="J1WHVlju0CjO4Q1nHd0t94,Dka7yS6xTRINd2MX6XLokz" />
         <Link Id="BolzCOKMy50Ox8LuYCgmSG" Ids="CyWFwPqoGZlPlqTew7lwh7,Mzad3hXKHgyQAANuB6JD57" />
-        <Link Id="UELDtrfVfNBOdzNOSt2Or7" Ids="VxjV6yCSUGwMpOghH7XWLb,UEOnAnNzSdpQN1mh2ABK75" />
         <Link Id="JaE4qShiGQLMGCnL9FHNlo" Ids="HpOGudtUoGcOcsajILDC8f,Mx0W0kNxXlxLdwU9vFrGcU" />
         <Link Id="Q71N3dWJAvvOyaUdBSxQUZ" Ids="Q4Luqj25rYbOCqXO30lxVi,O7SEmbLVnvjPRu76CAw4Gv" />
+        <Link Id="U8Pb8udc9XKMXsGyifUK23" Ids="VxjV6yCSUGwMpOghH7XWLb,UEOnAnNzSdpQN1mh2ABK75" />
       </Patch>
     </Node>
   </Patch>
