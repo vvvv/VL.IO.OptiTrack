@@ -496,11 +496,6 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="AOqez1SMZpWNwsTRm3WJbk" Comment="Connection Type" Bounds="166,50,71,15" ShowValueBox="true" isIOBox="true" Value="Unicast">
-            <p:TypeAnnotation LastCategoryFullName="NatNetML" LastDependency="VL.IO.OptiTrack.vl">
-              <Choice Kind="TypeFlag" Name="ConnectionType" />
-            </p:TypeAnnotation>
-          </Pad>
           <Pad Id="Jr5VGntNPCEPhilMNx2imc" Bounds="337,45,240,63" ShowValueBox="true" isIOBox="true" Value="⚠Make sure the Connection Type corresponds to the setting the Motive Settings &gt; Streaming">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -510,7 +505,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="MAuOZM2SycjLJrAilycGjB" Comment="Host Info" Bounds="166,120,224,161" ShowValueBox="true" isIOBox="true" Value="Host App: Motive&#xD;&#xA;Host App Version: 3.3.4.1&#xD;&#xA;Host Computer Name: &#xD;&#xA;Host Computer Address: 127.0.0.1&#xD;&#xA;Host Present: True&#xD;&#xA;NatNet Version: 4.2.0.0&#xD;&#xA;Connection Data Port: 1511&#xD;&#xA;Connection Multicast: True&#xD;&#xA;Connection Multicast Address: 239.255.42.99&#xD;&#xA;" />
+          <Pad Id="MAuOZM2SycjLJrAilycGjB" Comment="Host Info" Bounds="166,120,191,161" ShowValueBox="true" isIOBox="true" Value="Host App: Motive&#xD;&#xA;Host App Version: 3.3.4.1&#xD;&#xA;Host Computer Name: &#xD;&#xA;Host Computer Address: 127.0.0.1&#xD;&#xA;Host Present: True&#xD;&#xA;NatNet Version: 4.2.0.0&#xD;&#xA;Connection Data Port: 1511&#xD;&#xA;Connection Multicast: True&#xD;&#xA;Connection Multicast Address: 239.255.42.99&#xD;&#xA;" />
           <Pad Id="MMDGD1ZYGZ2NXyj6U7y0Za" Bounds="184,440,35,19" ShowValueBox="true" isIOBox="true" Value="&lt; all">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -519,6 +514,11 @@
               <p:fontsize p:Type="Int32">9</p:fontsize>
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="M8vsvhCFVu9NtNajCT3VsB" Comment="Connection Type" Bounds="166,60,71,15" ShowValueBox="true" isIOBox="true" Value="Unicast">
+            <p:TypeAnnotation LastCategoryFullName="IO.OptiTrack" LastDependency="VL.IO.OptiTrack.vl">
+              <Choice Kind="TypeFlag" Name="ConnectionType" />
+            </p:TypeAnnotation>
           </Pad>
         </Canvas>
         <Patch Id="FeFpIigU80gO8CaIt6q6Zg" Name="Create" />
@@ -575,7 +575,7 @@
         <Link Id="RcmSPgluxgfM42cqJKityS" Ids="GVKbM8kyBGnODAvqPjdKlk,I6Bi3qGsWm1Mpfd2RvFE4L" />
         <Link Id="B3KROry5W9xPsnWGVWBece" Ids="VzQBSB29AgpLujzKDubDmO,GTUsoSt9bZkMeKSGHKF9of" />
         <Link Id="MV19KPnGBxFOX6auTf6Bes" Ids="MRZRLCRc4JPOaEoHS2991k,MAuOZM2SycjLJrAilycGjB" />
-        <Link Id="N7v26r5sl3VMQkmGUMf6h6" Ids="AOqez1SMZpWNwsTRm3WJbk,RibZnl5hO1PLllh8x0LUha" />
+        <Link Id="QgUdZGpySpOPyxNuJMaD1Q" Ids="M8vsvhCFVu9NtNajCT3VsB,RibZnl5hO1PLllh8x0LUha" />
       </Patch>
     </Node>
   </Patch>
