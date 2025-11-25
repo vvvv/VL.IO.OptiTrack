@@ -27,7 +27,7 @@
             <Pin Id="UEOnAnNzSdpQN1mh2ABK75" Name="Connection Type" Kind="InputPin" />
             <Pin Id="Q4Luqj25rYbOCqXO30lxVi" Name="Host Info" Kind="OutputPin" />
           </Node>
-          <Node Bounds="220,780,225,19" Id="SXQBg69y6gaP5AepPydMvO">
+          <Node Bounds="240,780,225,19" Id="SXQBg69y6gaP5AepPydMvO">
             <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
@@ -319,7 +319,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PlGKKHKDHYvMHh35QtNCC6" Location="VL.IO.OptiTrack" Version="0.0.0" />
+  <NugetDependency Id="PlGKKHKDHYvMHh35QtNCC6" Location="VL.IO.OptiTrack" Version="0.0.1-alpha" />
   <NugetDependency Id="LoZlitJvpqDNo4mGZWLEAH" Location="VL.Stride" Version="2025.7.1-0106-gc0edd1f65b" />
   <NugetDependency Id="ShIqI9Th6w2MLSRinfv5Tq" Location="VL.Skeleton" Version="0.0.2-alpha" />
 </Document>

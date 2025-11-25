@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="O1XguOHtcEVLj7tVEvNx8h" LanguageVersion="2025.7.0" Version="0.128">
-  <NugetDependency Id="DSKIraLF6aKL84e32Xn54D" Location="VL.CoreLib" Version="2025.7.0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="O1XguOHtcEVLj7tVEvNx8h" LanguageVersion="2025.7.1-0106-gc0edd1f65b" Version="0.128">
+  <NugetDependency Id="DSKIraLF6aKL84e32Xn54D" Location="VL.CoreLib" Version="2025.7.1-0106-gc0edd1f65b" />
   <Patch Id="DSCuRs2CtjJLWdpUxz0K3g">
     <Canvas Id="LwYV3w7DjxEOhNbXCx2gKd" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -28,7 +28,7 @@
             <Pin Id="RibZnl5hO1PLllh8x0LUha" Name="Connection Type" Kind="InputPin" />
             <Pin Id="MRZRLCRc4JPOaEoHS2991k" Name="Host Info" Kind="OutputPin" />
           </Node>
-          <Node Bounds="509,1040,225,19" Id="SXQBg69y6gaP5AepPydMvO">
+          <Node Bounds="529,1040,225,19" Id="SXQBg69y6gaP5AepPydMvO">
             <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
@@ -40,11 +40,14 @@
             <Pin Id="TRu155R3yzqPByxCF6upe2" Name="Back Buffer Format" Kind="InputPin" IsHidden="true" />
             <Pin Id="IDlfQEWkYClL9W3cyrXsNz" Name="Depth Buffer Format" Kind="InputPin" IsHidden="true" />
             <Pin Id="IGqq4mRVHOcLRTYc7LX7tS" Name="Input Priority" Kind="InputPin" IsHidden="true" />
-            <Pin Id="Nxq7Rm9UnWhNQuBi2kBcAw" Name="Node Context" Kind="InputPin" />
+            <Pin Id="Nxq7Rm9UnWhNQuBi2kBcAw" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="VLRcNwS6hqDQcbwdrR6RS4" Name="Always On Top" Kind="InputPin" IsHidden="true" />
+            <Pin Id="QXlI3Foe5G4NpxznqJSfpz" Name="Extend Into Title Bar" Kind="InputPin" IsHidden="true" />
             <Pin Id="NX9T9PjE6m7OSuGx3oggHe" Name="Input" Kind="InputPin" />
             <Pin Id="C8eVAFcEXOAPRi2Gib6xkp" Name="Camera" Kind="InputPin" />
             <Pin Id="NC1uanPbLSKPPS3M43PSlz" Name="Enable Default Camera" Kind="InputPin" />
             <Pin Id="LNbQsYG7rEbP8fsnCnMRpE" Name="Title" Kind="InputPin" />
+            <Pin Id="F1WZSdzM9t2NpkdPiwm0p3" Name="Title Bar Interaction Width" Kind="InputPin" IsHidden="true" />
             <Pin Id="Bv8tzLUFqClLMQ5DTQMPuw" Name="Clear Color" Kind="InputPin" />
             <Pin Id="JAyW8kfjgF8LHWY1N6gjxP" Name="Clear" Kind="InputPin" />
             <Pin Id="UhjlxzooqIPOYLHFBD4sfU" Name="Post Effects" Kind="InputPin" />
@@ -70,6 +73,8 @@
             <Pin Id="MLXHyUfPKVTPYUtdrJaP1c" Name="Present Call Intercept" Kind="InputPin" IsHidden="true" />
             <Pin Id="LeekDYtVPyCPDXKAufvXa4" Name="Back Buffer" Kind="OutputPin" IsHidden="true" />
             <Pin Id="QuJRJf4aaiYMFkvq9MBuKG" Name="Depth Buffer" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="LLC5NK7laopL2H89pXiUeR" Name="Output Color Space" Kind="InputPin" IsHidden="true" />
+            <Pin Id="DbnFQhTH8QgMZhZnNwJxJS" Name="Backbuffer Format" Kind="InputPin" IsHidden="true" />
           </Node>
           <Node Bounds="247,950,205,19" Id="G8OeiEb3GNMNgaLdeJm4Uh">
             <p:NodeReference LastCategoryFullName="Stride.Lights" LastDependency="VL.Stride.vl">
@@ -505,7 +510,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="MAuOZM2SycjLJrAilycGjB" Comment="Host Info" Bounds="166,120,191,161" ShowValueBox="true" isIOBox="true" Value="Host App: Motive&#xD;&#xA;Host App Version: 3.3.4.1&#xD;&#xA;Host Computer Name: &#xD;&#xA;Host Computer Address: 127.0.0.1&#xD;&#xA;Host Present: True&#xD;&#xA;NatNet Version: 4.2.0.0&#xD;&#xA;Connection Data Port: 1511&#xD;&#xA;Connection Multicast: True&#xD;&#xA;Connection Multicast Address: 239.255.42.99&#xD;&#xA;" />
+          <Pad Id="MAuOZM2SycjLJrAilycGjB" Comment="Host Info" Bounds="166,120,183,171" ShowValueBox="true" isIOBox="true" Value="Host App: Motive&#xD;&#xA;Host App Version: 3.3.4.1&#xD;&#xA;Host Computer Name: &#xD;&#xA;Host Computer Address: 127.0.0.1&#xD;&#xA;Host Present: True&#xD;&#xA;NatNet Version: 4.2.0.0&#xD;&#xA;Connection Data Port: 1511&#xD;&#xA;Connection Multicast: True&#xD;&#xA;Connection Multicast Address: 239.255.42.99&#xD;&#xA;" />
           <Pad Id="MMDGD1ZYGZ2NXyj6U7y0Za" Bounds="184,440,35,19" ShowValueBox="true" isIOBox="true" Value="&lt; all">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -579,8 +584,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PlGKKHKDHYvMHh35QtNCC6" Location="VL.IO.OptiTrack" Version="0.0.0" />
-  <NugetDependency Id="LoZlitJvpqDNo4mGZWLEAH" Location="VL.Stride" Version="2025.7.0" />
+  <NugetDependency Id="PlGKKHKDHYvMHh35QtNCC6" Location="VL.IO.OptiTrack" Version="0.0.1-alpha" />
+  <NugetDependency Id="LoZlitJvpqDNo4mGZWLEAH" Location="VL.Stride" Version="2025.7.1-0106-gc0edd1f65b" />
   <NugetDependency Id="ShIqI9Th6w2MLSRinfv5Tq" Location="VL.Skeleton" Version="0.0.2-alpha" />
-  <NugetDependency Id="Kiotw5CYWRRP8EjxobGz3W" Location="VL.Skia" Version="2025.7.0" />
+  <NugetDependency Id="Kiotw5CYWRRP8EjxobGz3W" Location="VL.Skia" Version="2025.7.1-0106-gc0edd1f65b" />
 </Document>

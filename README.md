@@ -24,4 +24,4 @@ In [Motive](https://optitrack.com/support/downloads/motive.html) make sure to en
 - When making a pull-request, please make sure to read the general [guidelines on contributing to vvvv libraries](https://thegraybook.vvvv.org/reference/extending/contributing.html)
 
 ## Credits
-Based on [NatNetSDK 4.2](https://optitrack.com/software/natnet-sdk)
+Based on [NatNetSDK 4.4](https://optitrack.com/software/natnet-sdk)
